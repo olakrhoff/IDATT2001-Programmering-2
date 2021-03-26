@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<persistence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+             version="2.0" xmlns="http://java.sun.com/xml/ns/persistence">
+    <persistence-unit name="contacts-pu" transaction-type="RESOURCE_LOCAL">
+        <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+        <exclude-unlisted-classes>false</exclude-unlisted-classes>
+
+        <properties>
+            <property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.EmbeddedDriver" />
+            <property name="javax.persistence.jdbc.url" value="jdbc:derby:contactsdb;create=true" />
+            <property name="javax.persistence.jdbc.user" value="app" />
+            <property name="javax.persistence.jdbc.password" value="app" />
+
+            <property name="eclipselink.target-database" value="Derby" />
+            <property name="eclipselink.ddl-generation" value="create-tables" />
+            <property name="eclipselink.logging.level" value="INFO" />
+        </properties>
+
+    </persistence-unit>
+
+    <persistence-unit name="contacts-pu-local-db" transaction-type="RESOURCE_LOCAL">
+        <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+        <exclude-unlisted-classes>false</exclude-unlisted-classes>
+
+        <properties>
+            <property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.ClientDriver" />
+            <property name="javax.persistence.jdbc.url" value="jdbc:derby://localhost:1527/dbname;create=true"/>
+            <property name="javax.persistence.jdbc.user" value="APP" />
+            <property name="javax.persistence.jdbc.password" value="APP" />
+
+            <property name="eclipselink.target-database" value="Derby"/>
+            <property name="eclipselink.ddl-generation" value="create-tables" />
+            <property name="eclipselink.logging.level" value="INFO" />
+        </properties>
+
+    </persistence-unit>
+
+    <persistence-unit name="contacts-pu-mysql" transaction-type="RESOURCE_LOCAL">
+        <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+        <exclude-unlisted-classes>false</exclude-unlisted-classes>
+
+        <properties>
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://mysql.stud.iie.ntnu.no:3306/olakho"/>
+            <property name="javax.persistence.jdbc.user" value="olakho" />
+            <property name="javax.persistence.jdbc.password" value="GqDKH1oV" />
+
+            <property name="eclipselink.ddl-generation" value="create-tables" />
+            <property name="eclipselink.ddl-generation.output-mode" value="database" />
+            <property name="eclipselink.logging.level" value="INFO" />
+        </properties>
+
+    </persistence-unit>
+
+</persistence>

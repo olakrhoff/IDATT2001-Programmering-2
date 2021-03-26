@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Thu Feb 25 18:46:31 CET 2021:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-0177-da4c-a29a-000007168ab8 
+on database directory /Users/olakristofferhoff/Documents/Studier/2. Semester /Programmering 2/Obligatoriske innleveringer/Oblig 5/contacts-v0.3.1/contactsdb with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@4eec7777 
+Loaded from file:/Users/olakristofferhoff/Documents/Studier/2.%20Semester%20/Programmering%202/Obligatoriske%20innleveringer/Oblig%205/contacts-v0.3.1/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=14.0.1+7
+user.dir=/Users/olakristofferhoff/Documents/Studier/2. Semester /Programmering 2/Obligatoriske innleveringer/Oblig 5/contacts-v0.3.1
+os.name=Mac OS X
+os.arch=x86_64
+os.version=10.16
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
